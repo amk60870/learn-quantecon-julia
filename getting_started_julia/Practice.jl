@@ -155,3 +155,8 @@ y = f.(x)
 gr()
 plot(x,y, label= "line")
 scatter!(x,y, label = "scatter")
+
+# Using different backends for plotting
+Plots.PlotlyJSBackend()
+plot(x,y, label= "line")
+scatter!(x,y, label = "scatter")
